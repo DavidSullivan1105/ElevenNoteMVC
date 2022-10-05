@@ -15,4 +15,14 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ElevenNote.Data\ElevenNote.Data.csproj" />
+    <ProjectReference Include="..\ElevenNote.Models\ElevenNote.Models.csproj" />
+    <ProjectReference Include="..\ElevenNote.Services\ElevenNote.Services.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
 </Project>

@@ -951,6 +951,40 @@
             "rid": "win"
           }
         }
+      },
+      "ElevenNote.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.9",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.9"
+        },
+        "compile": {
+          "bin/placeholder/ElevenNote.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElevenNote.Data.dll": {}
+        }
+      },
+      "ElevenNote.Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ElevenNote.Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElevenNote.Models.dll": {}
+        }
+      },
+      "ElevenNote.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/ElevenNote.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ElevenNote.Services.dll": {}
+        }
       }
     }
   },
@@ -2442,10 +2476,28 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ElevenNote.Data/1.0.0": {
+      "type": "project",
+      "path": "../ElevenNote.Data/ElevenNote.Data.csproj",
+      "msbuildProject": "../ElevenNote.Data/ElevenNote.Data.csproj"
+    },
+    "ElevenNote.Models/1.0.0": {
+      "type": "project",
+      "path": "../ElevenNote.Models/ElevenNote.Models.csproj",
+      "msbuildProject": "../ElevenNote.Models/ElevenNote.Models.csproj"
+    },
+    "ElevenNote.Services/1.0.0": {
+      "type": "project",
+      "path": "../ElevenNote.Services/ElevenNote.Services.csproj",
+      "msbuildProject": "../ElevenNote.Services/ElevenNote.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "ElevenNote.Data >= 1.0.0",
+      "ElevenNote.Models >= 1.0.0",
+      "ElevenNote.Services >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.9",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.9",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.9",
@@ -2484,7 +2536,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Data\\ElevenNote.Data.csproj": {
+              "projectPath": "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Data\\ElevenNote.Data.csproj"
+            },
+            "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Models\\ElevenNote.Models.csproj": {
+              "projectPath": "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Models\\ElevenNote.Models.csproj"
+            },
+            "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Services\\ElevenNote.Services.csproj": {
+              "projectPath": "C:\\Users\\dcsul\\source\\repos\\ElevenNote\\ElevenNote.Services\\ElevenNote.Services.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
